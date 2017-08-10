@@ -18,9 +18,10 @@ MicroBitPin *getPin(int id);
 
 
 enum MessageType {
-        Data = 1,
-        Command = 0
-    };
+    Data = 1,
+    Command = 0
+};
+
 //% color=#fc4417 icon="\uf26c"
 namespace display {
 
@@ -46,7 +47,6 @@ void clear();
 void initialize()
 {
     initialized = true;
-    //buffer = (uint8_t *)malloc(504);
     pins::spiFormat(8, 0);
     pins::spiFrequency(1000000);
     if (!spiPinsChanged)
@@ -77,16 +77,6 @@ void initialize()
         Ce->setDigitalValue(0);
         pins::spiWrite(message);
         Ce->setDigitalValue(1);
-    }
-
-
-    
-    /**
-    * kasjldf
-    */
-    //% blockId="slajf" block="write"
-    void writeByte(uint8_t byte) {
-        write(Data, byte);
     }
 
     //%
@@ -130,16 +120,6 @@ void initialize()
         } else {
             return false;
         }
-    }
-
-    /**
-    * sdl
-    */
-    //% blockId="kjhas" block="jshdfkj"
-    void printBufferPointer() {
-        serial.send("\n\n");
-        serial.send((int)buffer);
-        serial.send("\n\n");
     }
 
     #if 0 // Does not work

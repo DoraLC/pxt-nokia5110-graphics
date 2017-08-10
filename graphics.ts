@@ -41,7 +41,7 @@ namespace display {
     //% y.min=0 y.min=47
     export function plotPixel(x: uint8, y: uint8): void {
         if (x >= 0 && x < 84 && y >= 0 && y < 48) {
-            Buffer.data[y / 8 + x] |= (1 << y % 8);
+            Buffer.data[(y/8)*84 + x] |= (1 << y % 8);
         }
     }
 
@@ -55,7 +55,7 @@ namespace display {
     //% y.min=0 y.min=47
     export function unplotPixel(x: uint8, y: uint8): void {
         if (x >= 0 && x < 84 && y >= 0 && y < 48) {
-            Buffer.data[y / 8 + x] &= ~(1 << y % 8);
+            Buffer.data[(y/8)*84 + x] &= ~(1 << y % 8);
         }
     }
 
@@ -70,7 +70,7 @@ namespace display {
     //% y.min=0 y.min=47
     export function getPixel(x: uint8, y: uint8): boolean {
         if (x >= 0 && x < 84 && y >= 0 && y < 48) {
-            return (Buffer.data[y / 8 + x] & (1 << y % 8)) ? true : false
+            return (Buffer.data[(y/8)*84 + x] & (1 << y % 8)) ? true : false
         } else {
             return false
         }
