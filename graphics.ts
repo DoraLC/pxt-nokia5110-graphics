@@ -39,7 +39,7 @@ namespace display {
     //% blockId="display_g_plot" block="plot pixel x %x|, y %y" shim=display::plotPixel
     //% x.min=0 x.max=83
     //% y.min=0 y.min=47
-    export function plotPixel(x: uint8, y: uint8): void {
+    export function plotPixel(x: number, y: number): void {
         if (x >= 0 && x < 84 && y >= 0 && y < 48) {
             Buffer.data[(y/8)*84 + x] |= (1 << y % 8);
         }
@@ -53,7 +53,7 @@ namespace display {
     //% blockId="display_g_unplot" block="unplot pixel x %x| y %y" shim=display::unplotPixel
     //% x.min=0 x.max=83
     //% y.min=0 y.min=47
-    export function unplotPixel(x: uint8, y: uint8): void {
+    export function unplotPixel(x: number, y: number): void {
         if (x >= 0 && x < 84 && y >= 0 && y < 48) {
             Buffer.data[(y/8)*84 + x] &= ~(1 << y % 8);
         }
@@ -68,7 +68,7 @@ namespace display {
     //% blockId="display_g_getPixel" block="get value of pixel x %x| y %y" shim=display::getPixel
     //% x.min=0 x.max=83
     //% y.min=0 y.min=47
-    export function getPixel(x: uint8, y: uint8): boolean {
+    export function getPixel(x: number, y: number): boolean {
         if (x >= 0 && x < 84 && y >= 0 && y < 48) {
             return (Buffer.data[(y/8)*84 + x] & (1 << y % 8)) ? true : false
         } else {
