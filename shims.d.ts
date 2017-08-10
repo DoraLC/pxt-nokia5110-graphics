@@ -6,18 +6,6 @@
 declare namespace display {
 
     /**
-     * kasjldf
-     */
-    //% blockId="slajf" block="write" shim=display::writeByte
-    function writeByte(byte: uint8): void;
-
-    /**
-     * sdl
-     */
-    //% blockId="kjhas" block="jshdfkj" shim=display::printBufferPointer
-    function printBufferPointer(): void;
-
-    /**
      *
      */
     //% weight=0 advanced=true shim=display::changeBusPins
