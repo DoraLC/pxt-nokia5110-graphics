@@ -25,8 +25,6 @@ enum MessageType {
 //% color=#fc4417 icon="\uf26c"
 namespace display {
 
-MicroBitSerial serial(USBTX, USBRX);
-
 // Variables used to keep track of when to change line while printing.
 uint8_t xPosition = 0;
 uint8_t yPosition = 0;
