@@ -6,9 +6,10 @@ display.setBacklight(1)
 let x = 0
 for (let x = 0; x < 84; x++) {
     for (let y = 0; y < 48; y++) {
-        display.plotPixel(x, y)
+        display.setPixel(x, y, true)
     }
     
 }
+
 
 display.updateDisplay()
