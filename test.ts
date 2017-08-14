@@ -3,13 +3,15 @@
 //display.changePins(DigitalPin.P3, DigitalPin.P4, DigitalPin.P5, DigitalPin.P8)
 display.setBacklight(1)
 
-let x = 0
-for (let x = 0; x < 84; x++) {
-    for (let y = 0; y < 48; y++) {
-        display.setPixel(x, y, true)
-    }
-    
-}
+display.updateDisplay()
 
+display.setCircle(84 / 2, 48 / 2, 10, true, 3)
+display.setRectangle(2, 2, 84-2, 48-2, false, true)
+
+display.updateDisplay()
+
+basic.pause(2000)
+
+display.invertDisplay()
 
 display.updateDisplay()
