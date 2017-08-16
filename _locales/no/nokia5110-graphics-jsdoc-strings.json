@@ -1,0 +1,19 @@
+{
+    "display.updateDisplay": "Oppdaterer skjermen. Må bli kalt for at endringer skal ha noe effekt",
+    "display.clear": "Tømmer skjermen.",
+    "display.setBacklight": "Skru bakgrunnslyset på (1) eller av (0)",
+    "display.setPixel": "Sett den spesifiserte pixelen, med  x,y koordinater, til svart",
+    "display.setPixel|param|x": "Horisontal posisjon, mellom o (til venstre) og 83.",
+    "display.setPixel|param|y": "Vertikal posisjon, mellom 0 (øverst) og 47.",
+    "display.setPixel|param|color": "Sann = svart.",
+    "display.getPixel": "Sjekk om den spesifiserte pixelen er på eler av.",
+    "display.getPixel|param|x": "Horisontal posisjon, mellom 0 og 83.",
+    "display.getPixel|param|y": "Vertikal posisjon, mellom 0 og 47.",
+    "display.getPixel|returns": "Returnerer sann hvis pixelen er på (svart), usann ellers (også hvis koordinatene er ugyldige).",
+    "display.setLine": "Tegner en linje fra x0, y0 til x1, y1 med den gitte fargen.",
+    "display.setLine|param|bw": "Sann = svart.",
+    "display.setRectangle": "Tegner et rektangel fra x0, y0 topp venstre hjørne, til x1, y1 bumm høyre. Kan bli fyllt, med \"filled\", og farget \"bw\"",
+    "display.setCircle": "Tegner en sirkel med sentrum i x0, y0, og en definert radius. Sirkelen kan være svart eller hvit. Og ha en linjetykkelse fra 1 til sirkelens radius.",
+    "display.invertDisplay": "Inverterer skjermen (svart blir hvitt, og vice versa).",
+    "display.changePins": "Endrer hvilke pinner som blir brukt for RST, CE, DC og LIGHT"
+}

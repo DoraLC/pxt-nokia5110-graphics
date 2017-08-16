@@ -32,12 +32,12 @@ namespace display {
     }
 
     /**
-     * Turns on the specified pixel, using x,y coordinates.
-     * @param x Horizontal position, between 0 and 83.
-     * @param y Vertical position, between 0 and 47.
+     * Set the specified pixel, using x,y coordinates, to black.
+     * @param x Horizontal position, between 0 (to the left) and 83.
+     * @param y Vertical position, between 0 (on top) and 47.
      * @param color true = black
      */
-    //% blockId="display_g_plot" block="plot pixel x %x|, y %y" shim=display::setPixel
+    //% blockId="display_g_plot" block="set pixel x %x|, y %y| to black %color" shim=display::setPixel
     //% x.min=0 x.max=83
     //% y.min=0 y.min=47
     export function setPixel(x: number, y: number, color: boolean): void {
@@ -52,7 +52,7 @@ namespace display {
      * Check if the specified pixel is on or off
      * @param x Horizontal position, between 0 and 83.
      * @param y Vertical position, between 0 and 47.
-     * @returns Returns true if the pixel is on (plotted), false otherwise (includeing if the coordinates are out of bounds).
+     * @returns Returns true if the pixel is on (black), false otherwise (including if the coordinates are out of bounds).
      */
     //% blockId="display_g_getPixel" block="get value of pixel x %x| y %y" shim=display::getPixel
     //% x.min=0 x.max=83
@@ -165,7 +165,7 @@ namespace display {
      * The circle can be black or white. And have a line thickness ranging from 1 to
      * the radius of the circle.
      */
-    //% blockId="display_g_set_circle" block="draw a circle with radius x %x0|, y %y0|, radius %radius|, black %bw|, thickness %lineThickness"
+    //% blockId="display_g_set_circle" block="draw a circle with center x %x0|, y %y0|, radius %radius|, black %bw|, thickness %lineThickness"
     //% x0.min=0 x0.max=83
     //% y0.min=0 y0.min=47
     export function setCircle(x0: number, y0: number, radius: number, bw: boolean, lineThickness: number): void {

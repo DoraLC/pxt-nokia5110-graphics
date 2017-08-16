@@ -1,0 +1,12 @@
+{
+    "display.updateDisplay|block": "oppdater skjermen",
+    "display.clear|block": "tøm skjermen",
+    "display.setBacklight|block": "set bakgrunnslyset %value",
+    "display.setPixel|block": "sett pixel x %x|, y%y| til svart %color",
+    "display.getPixel|block": "få verdien til pixel x %x|, y %y",
+    "display.setLine|block": "tegn linje fra x %x0|, y %y0| til x %x1|, y %y1|, i svart %bw",
+    "display.setRectangle|block": "tegn rektangel fra x %x0|, y %y0| top venstre til x %x1|, y %y1|, fyllt %filled|, i svart %bw",
+    "display.setCircle|block": "tegn en sirkel med senter x %x0|, y %y0|, radius %radius|, i svart %bw|, med tykkelse %lineThickness",
+    "display.invertDisplay|block": "inverter skjermen",
+    "display.changePins|block": "sett pinner RST %RST| CE %CE| DC %DC| LIGHT %LIGHT"
+}
