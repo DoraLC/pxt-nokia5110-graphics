@@ -20,7 +20,9 @@
         "graphics.cpp",
         "graphics.ts",
         "shims.d.ts",
-        "enums.d.ts"
+        "enums.d.ts",
+        "_locales/no/nokia5110-graphics-jsdoc-strings.json",
+        "_locales/no/nokia5110-graphics-strings.json"
     ],
     "testFiles": [
         "test.ts"
