@@ -1,6 +1,6 @@
 {
     "name": "nokia5110-graphics",
-    "version": "0.0.8",
+    "version": "0.0.9",
     "description": "A driver for showing graphics on the nokia5110 LCD display.",
     "license": "MIT",
     "dependencies": {
